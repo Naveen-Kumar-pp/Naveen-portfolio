@@ -1,0 +1,157 @@
+.contact-section {
+  background-color: var(--light);
+
+  text-align: center;
+}
+
+.contact-intro {
+  margin-bottom: 30px;
+}
+
+#contactForm {
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+
+  font-weight: 600;
+
+  margin-bottom: 8px;
+
+  color: var(--primary);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border:
+    2px solid var(--border);
+
+  border-radius: 8px;
+
+  font-size: 1rem;
+
+  font-family: inherit;
+
+  background-color: var(--white);
+
+  color: var(--text);
+
+  transition:
+    border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+
+  outline: none;
+
+  border-color: var(--primary);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(27, 79, 114, 0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.error-message {
+  display: block;
+
+  color: #d32f2f;
+
+  margin-top: 5px;
+
+  min-height: 20px;
+}
+
+.form-message {
+  margin-top: 20px;
+
+  font-weight: 600;
+
+  text-align: center;
+}
+
+.email-contact {
+  margin-top: 30px;
+}
+
+.email-contact a {
+  color: var(--primary);
+
+  font-weight: 600;
+}
+
+/* =====================================================
+   SEND MESSAGE BUTTON
+===================================================== */
+
+.contact-submit-btn {
+  display: block;
+
+  width: 100%;
+
+  padding: 14px 28px;
+
+  margin-top: 10px;
+
+  border: 2px solid var(--accent);
+
+  border-radius: 9px;
+
+  background-color: var(--accent);
+
+  color: var(--white);
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    all 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+  background-color: var(--white);
+
+  color: var(--accent);
+
+  border-color: var(--accent);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px
+    rgba(0, 0, 0, 0.15);
+}
+
+.contact-submit-btn:active {
+  transform: translateY(0);
+}
+
+.contact-submit-btn:focus {
+  outline: none;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(241, 143, 1, 0.25);
+}

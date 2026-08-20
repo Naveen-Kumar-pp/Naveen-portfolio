@@ -1,0 +1,56 @@
+.about-section {
+  background-color: var(--white);
+}
+
+.about-content {
+  max-width: 900px;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 50px;
+}
+
+.about-content figure {
+  text-align: center;
+}
+
+.about-content img {
+  width: 200px;
+
+  height: 200px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 5px solid var(--accent);
+}
+
+figcaption {
+  margin-top: 10px;
+
+  font-weight: 600;
+}
+
+.about-text {
+  max-width: 500px;
+
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+
+  .about-content {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 30px;
+  }
+}

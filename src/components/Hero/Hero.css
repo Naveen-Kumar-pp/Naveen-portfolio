@@ -1,0 +1,241 @@
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero-section {
+  min-height: 80vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary),
+      var(--secondary)
+    );
+
+  color: var(--white);
+
+  padding: 100px 5%;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+
+/* =====================================================
+   WELCOME TEXT
+===================================================== */
+
+.welcome-text {
+  font-size: 1.2rem;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: var(--accent);
+
+  margin-bottom: 15px;
+
+  animation:
+    fadeInUp 0.8s ease both;
+}
+
+
+/* =====================================================
+   HERO HEADING
+===================================================== */
+
+.hero-section h1 {
+  font-size: 3.2rem;
+
+  margin-bottom: 20px;
+
+  animation:
+    fadeInUp 0.8s ease 0.2s both;
+}
+
+
+/* =====================================================
+   TAGLINE
+===================================================== */
+
+.tagline {
+  font-size: 1.25rem;
+
+  margin-bottom: 35px;
+
+  animation:
+    fadeInUp 0.8s ease 0.4s both;
+}
+
+
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
+
+.hero-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 18px;
+
+  animation:
+    fadeInUp 0.8s ease 0.6s both;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.hero-btn {
+  display: inline-flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-width: 160px;
+
+  padding: 14px 28px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  border: 2px solid var(--accent);
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+/* =====================================================
+   PRIMARY BUTTON
+===================================================== */
+
+.hero-btn-primary {
+  background-color: var(--accent);
+
+  color: var(--white);
+}
+
+.hero-btn-primary:hover {
+  background-color: var(--white);
+
+  color: var(--accent);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(0, 0, 0, 0.2);
+}
+
+
+/* =====================================================
+   SECONDARY BUTTON
+===================================================== */
+
+.hero-btn-secondary {
+  background-color: transparent;
+
+  color: var(--white);
+
+  border-color: var(--white);
+}
+
+.hero-btn-secondary:hover {
+  background-color: var(--white);
+
+  color: var(--primary);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(0, 0, 0, 0.2);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    min-height: 75vh;
+
+    padding: 80px 5%;
+  }
+
+  .welcome-text {
+    font-size: 1rem;
+
+    letter-spacing: 1.5px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.3rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .hero-btn {
+    width: 220px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .welcome-text {
+    font-size: 0.9rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.9rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    width: 200px;
+
+    padding: 12px 20px;
+  }
+}

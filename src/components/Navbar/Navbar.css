@@ -1,0 +1,208 @@
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 5%;
+
+  background-color: var(--primary);
+
+  transition:
+    background-color 0.3s ease;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+  font-size: 28px;
+
+  font-weight: 700;
+
+  color: var(--white);
+
+  text-decoration: none;
+
+  margin-right: 35px;
+
+  transition:
+    color 0.3s ease;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.nav-links {
+  list-style: none;
+
+  display: flex;
+
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+
+  color: var(--white);
+
+  font-weight: 500;
+
+  transition:
+    color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent);
+}
+
+
+/* =====================================================
+   NAV ACTIONS
+===================================================== */
+
+.nav-actions {
+  display: flex;
+
+  align-items: center;
+
+  margin-left: auto;
+}
+
+
+/* =====================================================
+   DARK MODE BUTTON
+===================================================== */
+
+.theme-toggle {
+  background: transparent;
+
+  border: none;
+
+  color: var(--white);
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  margin-left: 20px;
+
+  padding: 5px;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+
+/* =====================================================
+   MOBILE MENU BUTTON
+===================================================== */
+
+.menu-toggle {
+  display: none;
+
+  background: transparent;
+
+  border: none;
+
+  color: var(--white);
+
+  font-size: 30px;
+
+  cursor: pointer;
+
+  margin-left: 15px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .nav-links {
+
+    display: none;
+
+    position: absolute;
+
+    top: 70px;
+
+    left: 0;
+
+    width: 100%;
+
+    background-color: var(--primary);
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 20px 0;
+
+    gap: 20px;
+
+    box-shadow:
+      0 5px 10px
+      rgba(0, 0, 0, 0.15);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .theme-toggle {
+    font-size: 20px;
+  }
+
+  .menu-toggle {
+    font-size: 26px;
+  }
+
+}

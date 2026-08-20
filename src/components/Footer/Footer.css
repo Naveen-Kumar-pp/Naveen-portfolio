@@ -1,0 +1,61 @@
+.site-footer {
+  background-color: var(--primary);
+
+  color: var(--white);
+
+  text-align: center;
+
+  padding: 40px 5%;
+}
+
+.site-footer nav {
+  margin-top: 15px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.site-footer a {
+  color: var(--white);
+
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+.scroll-top {
+  position: fixed;
+
+  bottom: 25px;
+  right: 25px;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background-color: var(--accent);
+
+  color: var(--white);
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  display: none;
+
+  z-index: 999;
+}
+
+.scroll-top.show {
+  display: block;
+}
